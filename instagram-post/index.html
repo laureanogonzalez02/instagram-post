@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Instagram Post</title>
+  </head>
+  <body>
+    <article class="post">
+      <header class="post-header">
+        <div class="profile-picture">
+          <img
+            src="https://imgs.search.brave.com/oukBnn2fy-TutEzkJvDAEHSY_pZ9EQq1csqwb95n7g8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzIzLzIvaHRtbDUt/d2l0aG91dC13b3Jk/bWFyay1ibGFja3do/aXRlLWxvZ28tcG5n/X3NlZWtsb2dvLTIz/NjU0MS5wbmc"
+            alt="profile-picture"
+          />
+          <div class="profile-info">
+            <strong>HTML5</strong>
+            <p>Laureano</p>
+          </div>
+        </div>
+        <div class="options-header">
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+      </header>
+      <div>
+        <img
+          src="https://i.pinimg.com/736x/e8/62/4b/e8624b97afedfcf9cf7d95f3d304041b.jpg"
+          alt="Post Image"
+        />
+      </div>
+      <footer>
+        <div class="simbols-container">
+          <div class="left-simbols">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-comment"></i>
+            <i class="fa-regular fa-paper-plane"></i>
+          </div>
+          <div class="right-simbol">
+            <i class="fa-regular fa-bookmark"></i>
+          </div>
+        </div>
+        <p>
+          Liked by <strong>4GeeksAcademy</strong>, <strong>html5</strong>,
+          <strong>Web</strong> and <strong>100,000 others</strong>
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
+          explicabo ea accusantium totam aliquam laboriosam officia sit
+          cupiditate labore repudiandae itaque, debitis illo dolores
+          exercitationem beatae sint necessitatibus inventore neque.
+        </p>
+      </footer>
+    </article>
+  </body>
+</html>
+
+<!--
+💡 TIPS DE MEJORA PARA EL POST DE INSTAGRAM
+
+📄 ESTRUCTURA GENERAL
+─────────────────────
+✅ Asegurarse de que el <article> tenga un id.
+
+👤 PERFIL / HEADER
+─────────────────────
+✅ El logo de HTML5 debe tener un alt descriptivo (ej: "Logo HTML5") o alt="" si es decorativo.
+✅ Considerar usar <a href="#"> para el nombre y usuario, simulando un enlace al perfil.
+
+
+🖼️ IMAGEN PRINCIPAL
+─────────────────────
+✅ Incluir width y height fijos para evitar saltos de diseño (layout shift).
+✅ Agregar loading="lazy" y decoding="async" para rendimiento.
+✅ Si quisieras un pie de foto, podés envolver la imagen en <figure> y usar <figcaption>.
+
+❤️ ICONOS / ACCIONES
+─────────────────────
+✅ Los iconos deben estar dentro de botones (<button>) con aria-labels:
+   - aria-label="Me gusta"
+   - aria-label="Comentar"
+   - aria-label="Enviar"
+   - aria-label="Guardar"
+✅ Los <i> deben llevar aria-hidden="true" ya que son decorativos.
+✅ Agrupar todos los íconos dentro de un <nav role="group" aria-label="Post actions"> para accesibilidad.
+
+
+🌐 ACCESIBILIDAD
+─────────────────────
+✅ Usar aria-labels en botones.
+✅ Evitar <i> solos sin contexto, siempre dentro de un <button> o <span> descriptivo.
+✅ Añadir contrastes adecuados (texto negro sobre fondo blanco o gris claro).
+-->
